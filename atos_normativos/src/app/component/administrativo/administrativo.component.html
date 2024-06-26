@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/src/assets/admistrativo/css/estilo.css">
+    <title>Formulário de registros</title>
+</head>
+<body>
+    <div class="img">
+        <img src="/src/assets/admistrativo/imagens/brasao_pcac.png" width="80px" height="90px">
+        <h1>Formulário de cadastro <br>
+            Atos Normativos</h1>  
+    </div>      
+    <div class="container_form">
+         
+       
+    
+        <form class="form" action="#" method="post">
+            
+            <div class="form_grupo">
+                <label for="nome" class="form_label">Lei nº</label><br>
+                <input type="text" name="nome" class="form_input" id="nome" placeholder="Ex: Lei nº, Decreto nº, Procedimentos" required>
+            </div>
+            <div class="form_grupo">
+                <label for="nome" class="form_label">Descrição</label><br>
+                <input type="text" name="nome" class="form_input" id="nome" placeholder="Ex: Institui  a  Lei  Orgânica  da  Polícia  Civil" required>
+            </div>
+            
+           <div class="form_grupo">
+                <label for="datanascimento" class="form_label">Data da Criação</label><br>
+                <input type="date" name="datanascimento" class="form_input" id="datanascimento" placeholder="Data de Nascimento" required>
+            </div>        
+    
+            <div class="form_grupo">
+                
+                <label for="estadocivil" class="text">Tipo</label>
+                <select name="estadocivil" class="dropdown" required>
+                    
+                    <option selected disabled class="form_select_option" value="">Selecione</option>
+                    <option value="Divorciado" class="form_select_option">Lei</option> 
+                    <option value="Solteiro" class="form_select_option">Lei Complemenatr</option>
+                    <option value="Casado" class="form_select_option">Decreto</option>
+                    <option value="Divorciado" class="form_select_option">Portaria</option>
+                    <option value="Divorciado" class="form_select_option">Portaria Regulamentar</option>
+                    <option value="Divorciado" class="form_select_option">Procedimentos</option>
+                    <option value="Divorciado" class="form_select_option">Pessoal, vida funcional e expediente</option>
+                    <option value="Divorciado" class="form_select_option">Disposições sobre armamento</option>                    
+                    <option value="Divorciado" class="form_select_option">Regulamentações sobre viaturas, veículos e abastecimento</option> 
+                    <option value="Divorciado" class="form_select_option">segurança publica e cooperação</option> 
+                    <option value="Viúvo" class="form_select_option"></option>                    
+                
+                </select>
+    
+            </div>               
+    
+                <div class="form_message">
+                    
+                    <label for="message" class="form_message_label">Resumo da Lei</label>
+                    <textarea name="mensagem" id="message" cols="30" rows="3" class="form_input message_input" required></textarea>
+    
+                </div>
+    
+                <div class="submit">    
+                  <input type="hidden" name="acao" value="enviar">
+                  <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
+                
+                </div>          
+    
+        </form>  
+    </div>  
+    
+</body>
+</html>
